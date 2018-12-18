@@ -40,7 +40,7 @@ ADIENCE_5_FOLD_TXT_PATH = './adience_5_fold'
 # Fold
 FOLDS = ['0','1','2','3','4']
 
-# Data directory 종류
+# Data directories
 DATA_TYPES = ['age_test', 'age_train', 'age_val']
 
 def main():
