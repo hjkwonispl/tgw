@@ -1,6 +1,6 @@
 ![Proposed Age Estimation Network](./images/proposed_network.png)
 
-Trainable Gabor Wavelet
+Human Age Estimation Using Trainable Gabor Wavelet
 ======================
 This page provide source code of paper 
 'Human Age Estimation Using Trainable Gabor Wavelet'  
