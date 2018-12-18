@@ -1,0 +1,8 @@
+__pycache__/
+build/
+checkpoint/
+data/
+gabor_layer/
+saved_models/
+log/
+/README.html
