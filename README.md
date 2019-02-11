@@ -21,7 +21,7 @@ Following python packages are necessary.
   3. **cffi 1.11.5**
   3. gdown 3.7.3
   
-(Recommended) We recommend anaconda environment (with python=3.6) and 'pip install -r requirements.txt' for installation
+(Recommended) We recommend Anaconda environment (with python=3.6) and 'pip install -r requirements.txt' for installation
 
 ## Database
 We used **aligned version of Adience database**.  
