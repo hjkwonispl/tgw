@@ -3,7 +3,7 @@
 Age Estimation using Trainable Gabor Wavelet Layers in a Convolutional Neural Network
 ======================
 This page provide source code of paper 
-'Human Age Estimation Using Trainable Gabor Wavelet'  
+'Age Estimation using Trainable Gabor Wavelet Layers in a Convolutional Neural Network'  
 
 ## Requirements
 
