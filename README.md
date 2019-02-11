@@ -18,9 +18,10 @@ Our code requires following environment.
 Following python packages are necessary. 
   1. **PyTorch 0.3.1**
   2. **Torchvision 0.2.0**
+  3. **cffi 1.11.5**
   3. gdown 3.7.3
   
-You can use 'pip install -r requirements.txt' for install above packages.
+(Recommended) You can use 'pip install -r requirements.txt' for install above packages.
 
 ## Database
 We used **aligned version of Adience database**.  
@@ -35,7 +36,7 @@ It can be reproduced with following steps.
   2. Put and **extract 'aligned.tar'** in tgw/data/aligned
   3. Execute **'make_adience_data.py'**
 
-Or, you can download pre-processed Adience dataset with download/download_database.py
+(Recommended) Or, you can download pre-processed Adience dataset with download/download_database.py
 
 ### Build Cuda Kernels 
 To speed up training, we implemented forward and backward pass of TGW in
@@ -56,7 +57,7 @@ We provide pre-trained model of the proposed network.
 It is available at **[Saved_Models](https://drive.google.com/file/d/16JlE5IaNU2fE8Otl-OHk8jQHgjEDVFhe/view?usp=sharing)**.  
 After download, **move all files into 'tgw/saved_models'**.
 
-Or, you can download pre-trained models with download/download_saved_models.py
+(Recommended) Or, you can download pre-trained models with download/download_saved_models.py
 
 ### Run Test Script
 Run **'test.py'**.  
