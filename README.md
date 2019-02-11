@@ -10,9 +10,10 @@ This page provide source code of paper
 ### System
 Our code requires following environment.
   1. Ubuntu 16.04 LTS
-  2. **Cuda 8.0 or 9.0**
-  3. **PyTorch 0.3.1**
-  4. gcc >= 5.4.0
+  2. python 3.6
+  3. **Cuda 8.0 or 9.0**
+  4. **PyTorch 0.3.1**
+  5. gcc >= 5.4.0
 
 ### Database
 We used **aligned version of Adience database**.  
@@ -26,6 +27,7 @@ It can be reproduced with following steps.
   1. Download aligned version of Adience dataset (aligned.tar)
   2. Put and **extract 'aligned.tar'** in tgw/data/aligned
   3. Execute **'make_adience_data.py'**
+(Or, you can download pre-processed Adience dataset with download/download_database.py)
 
 ### Build Cuda Kernels 
 To speed up training, we implemented forward and backward pass of TGW in
@@ -44,6 +46,7 @@ Build process is given below.
 ### Download pre-trained models.
 We provide pre-trained model of the proposed network.  
 It is available at **[Saved_Models](https://drive.google.com/file/d/16JlE5IaNU2fE8Otl-OHk8jQHgjEDVFhe/view?usp=sharing)**.  
+(Or, you can download pre-processed Adience dataset with download/download_saved_models.py)
 After download, **move all files into 'tgw/saved_models'**.
 
 ### Run Test Script
