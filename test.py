@@ -46,6 +46,9 @@ FOLDS = ['0', '1', '2', '3', '4']
 
 def main():
 
+  if not os.path.exists(os.path.join(args.log_path)):
+    os.makedirs(args.log_path)
+    
   log_txt  = open(os.path.join(args.log_path, 'test_log.txt'), 'a')
   log_txt.write(dt.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'))
   
