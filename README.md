@@ -10,10 +10,16 @@ This page provide source code of paper
 ### System
 Our code requires following environment.
   1. Ubuntu 16.04 LTS
-  2. python 3.6
+  2. gcc >= 5.4.0  
   3. **Cuda 8.0 or 9.0**
-  4. **PyTorch 0.3.1**
-  5. gcc >= 5.4.0
+  4. python 3.6
+
+### Python packages
+Following python packages are necessary. 
+  1. **PyTorch 0.3.1**
+  2. **Torchvision 0.2.0**
+  3. gdown 3.7.3
+You can use 'pip install -r requirements.txt' for install above packages.
 
 ### Database
 We used **aligned version of Adience database**.  
