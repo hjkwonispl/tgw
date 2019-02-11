@@ -2,26 +2,24 @@
 
 Age Estimation using Trainable Gabor Wavelet Layers in a Convolutional Neural Network
 ======================
-This page provide source code of paper 
+This page provide source code of the paper 
 'Age Estimation using Trainable Gabor Wavelet Layers in a Convolutional Neural Network'  
 
 ## Requirements
 
 ### System
-Our code requires following environment.
   1. Ubuntu 16.04 LTS
   2. gcc >= 5.4.0  
   3. **Cuda 8.0 or 9.0**
   4. python 3.6
 
 ### Python packages
-Following python packages are necessary. 
   1. **PyTorch 0.3.1**
   2. **Torchvision 0.2.0**
   3. **cffi 1.11.5**
-  3. gdown 3.7.3
+  4. gdown 3.7.3
   
-(Recommended) We recommend Anaconda environment (with python=3.6) and 'pip install -r requirements.txt' for installation
+  (Recommended) We recommend Anaconda environment (with python=3.6) and 'pip install -r requirements.txt' for installation
 
 ## Database
 We used **aligned version of Adience database**.  
