@@ -56,7 +56,7 @@ We provide pre-trained model of the proposed network.
 It is available at **[Saved_Models](https://drive.google.com/file/d/16JlE5IaNU2fE8Otl-OHk8jQHgjEDVFhe/view?usp=sharing)**.  
 After download, **move all files into 'tgw/saved_models'**.
 
-Or, you can download pre-processed Adience dataset with download/download_saved_models.py
+Or, you can download pre-trained models with download/download_saved_models.py
 
 ### Run Test Script
 Run **'test.py'**.  
