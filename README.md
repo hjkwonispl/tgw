@@ -22,7 +22,7 @@ Following python packages are necessary.
   
 You can use 'pip install -r requirements.txt' for install above packages.
 
-### Database
+## Database
 We used **aligned version of Adience database**.  
 It is available at http://www.cslab.openu.ac.il/download/ 
 
@@ -34,7 +34,8 @@ It can be reproduced with following steps.
   1. Download aligned version of Adience dataset (aligned.tar)
   2. Put and **extract 'aligned.tar'** in tgw/data/aligned
   3. Execute **'make_adience_data.py'**
-(Or, you can download pre-processed Adience dataset with download/download_database.py)
+
+Or, you can download pre-processed Adience dataset with download/download_database.py
 
 ### Build Cuda Kernels 
 To speed up training, we implemented forward and backward pass of TGW in
@@ -53,8 +54,9 @@ Build process is given below.
 ### Download pre-trained models.
 We provide pre-trained model of the proposed network.  
 It is available at **[Saved_Models](https://drive.google.com/file/d/16JlE5IaNU2fE8Otl-OHk8jQHgjEDVFhe/view?usp=sharing)**.  
-(Or, you can download pre-processed Adience dataset with download/download_saved_models.py)
 After download, **move all files into 'tgw/saved_models'**.
+
+Or, you can download pre-processed Adience dataset with download/download_saved_models.py
 
 ### Run Test Script
 Run **'test.py'**.  
