@@ -2,7 +2,7 @@
 
 Age Estimation using Trainable Gabor Wavelet Layers in a Convolutional Neural Network
 ======================
-This page provide source code of the paper 
+This page provides the source code of the paper 
 'Age Estimation using Trainable Gabor Wavelet Layers in a Convolutional Neural Network'  
 
 ## Requirements
@@ -22,14 +22,14 @@ This page provide source code of the paper
   (Recommended) We recommend Anaconda environment (with python=3.6) and 'pip install -r requirements.txt' for installation
 
 ## Database
-We used **aligned version of Adience database**.  
+We used **aligned version of the Adience database**.  
 It is available at http://www.cslab.openu.ac.il/download/ 
 
 ## Installation
 
 ### Prepare Adience Database
-We used same experimental settings as in [1].  
-It can be reproduced with following steps.
+We used the same experimental settings as in [1].  
+It can be reproduced with the following steps.
   1. Download aligned version of Adience dataset (aligned.tar)
   2. Put and **extract 'aligned.tar'** in tgw/data/aligned
   3. Execute **'make_adience_data.py'**
@@ -39,7 +39,7 @@ It can be reproduced with following steps.
 ### Build Cuda Kernels 
 To speed up training, we implemented forward and backward pass of TGW in
 Cuda kernels.  
-Build process is given below.
+The build process is given below.
   1. Set appropriate **'nvcc' path in 'Makefile'**  
     (You need to check '/usr/local/cuda/bin/nvcc' in
       'NVCC_COMPILE := /usr/local/cuda/bin/nvcc -c -o')
@@ -51,7 +51,7 @@ Build process is given below.
 ## How to Test?
 
 ### Download pre-trained models.
-We provide pre-trained model of the proposed network.  
+We provide a pre-trained model of the proposed network.  
 It is available at **[Saved_Models](https://drive.google.com/file/d/16JlE5IaNU2fE8Otl-OHk8jQHgjEDVFhe/view?usp=sharing)**.  
 After download, **move all files into 'tgw/saved_models'**.
 
@@ -60,7 +60,7 @@ After download, **move all files into 'tgw/saved_models'**.
 ### Run Test Script
 Run **'test.py'**.  
 Test results will be stored at 'tgw/log'.  
-Our result on each fold is summarized in following table.  
+Our result on each fold is summarized in the following table.  
 
 |Test Fold   | 0   | 1   | 2   | 3   | 4    |
 |---         |---  |---  |---  |---  |---   |
@@ -71,31 +71,31 @@ Training of proposed network requires 2 mandatory settings and
 support other options for training.
 
 ### Type (Mandatory)
-Type of Operation mode of proposed network 
-  set by giving argument to **'-t'** options.  
-It has following 4 different modes.
+Type of Operation mode of the proposed network 
+  set by giving arguments to **'-t'** options.  
+It has the following 4 different modes.
   1. **ksize**: learns sampling grid (**Best Method**)  
   2. **all**: learns sampling grids and parameters of Gabor wavelets  
-  3. **~ksize**: learns other parameters of Gabor wavelets except orientation  
+  3. **~ksize**: learns other parameters of Gabor wavelets except for the orientation  
   4. **none**: do not learn any parameter of Gabor wavelets w/ steering.
 
 ### Fold (Mandatory)
-Fold of training should be given to training script.  
+The fold of training should be given to the training script.  
 You need to specify the number of fold in [0, 1, 2, 3, 4] with **'-f'** option.
 
 ### Resume (Optional)
 Resume of training from stopped epoch with **--resume**
 
 ### GPU Number (Optional)
-You can specify the number of GPU can be used for training with **--gpu**. 
+You can specify the number of GPU that can be used for training with **--gpu**. 
 
 ### Examples
-If you want to train the proposed network with trainable sampling grid
-for 1st fold of Adience dataset then you need to put into following bash
+If you want to train the proposed network with a trainable sampling grid
+for 1st fold of the Adience dataset then you need to put it into the following bash
 command.
 > python train.py -t ksize -f 1  
 
-If you want to resume from an existing checkpoints,   
+If you want to resume from an existing checkpoint,   
 > python train.py -t ksize -f 1 --resume  
 
 If you want to resume from existing checkpoints from GPU with GPUID 2,   
