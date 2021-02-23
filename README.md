@@ -1,4 +1,4 @@
-![Proposed Age Estimation Network](./images/proposed_network.png)
+![Proposed Age Estimation Network](./images/proposed_network.svg)
 
 Age Estimation using Trainable Gabor Wavelet Layers in a Convolutional Neural Network
 ======================
